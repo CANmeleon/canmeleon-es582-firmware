@@ -2,9 +2,15 @@
 
 [English](README.md) · [简体中文](README.zh-CN.md)
 
-CANmeleon ES582 firmware connects supported CANmeleon USB-CAN/CAN FD hardware to ETAS INCA and BOA on Windows. This repository provides firmware capabilities, hardware requirements and installation instructions.
+CANmeleon ES582-compatible firmware connects supported USB-CAN/CAN FD hardware to ETAS INCA for CAN traffic and XCP/CCP calibration, and to BOA for application development on Windows. Start here for two-channel hardware requirements, firmware downloads and driver setup.
 
 [Features and performance](#features-and-performance) · [Download and install](#download-and-install) · [Supported devices](https://canmeleon.com/en/firmware/devices/) · [Firmware catalog](https://github.com/CANmeleon/canmeleon-usb-can-firmware)
+
+## When to choose ES582 firmware
+
+- Connect supported CANmeleon hardware to an ETAS INCA measurement or XCP/CCP calibration workflow.
+- Develop Windows applications that send and receive CAN/CAN FD frames through ETAS BOA.
+- Select a two-channel interface using the hardware requirements below, then install the driver and BOA components required by your INCA setup.
 
 ## Supported hardware
 
@@ -64,9 +70,9 @@ ES582 mode; requires a device with 2 CAN interfaces and a license for this mode.
 
 **Which hardware receives this firmware?** Install it on compatible CANmeleon devices selected through the catalog and Device Manager. The mode name identifies the software interface; firmware updates for third-party-manufactured devices come from their manufacturers.
 
-**Does switching firmware add physical channels?** Channel count depends on the hardware and selected mode. A four-channel mode requires four physical CAN channels and its corresponding license.
+**How many CAN channels does ES582 mode provide?** Two CAN/CAN FD channels, requiring two physical CAN interfaces and the corresponding mode license.
 
-**Are these figures guaranteed for every workload?** Use the bus rates, frame length, direction, mode and short-duration qualifiers in each row. Configurable data-phase bit rate and typical frame throughput describe different properties.
+**How do I read the performance table?** Match the bus rates, frame length, direction and mode to your workload. Configurable bit rate describes the bus setting; frame throughput describes transmitted or received frames per second.
 
 **Where is the source code?** This repository contains documentation, parameter data and binary-download links. Refer to the component or release for its license.
 
@@ -75,3 +81,5 @@ ES582 mode; requires a device with 2 CAN interfaces and a license for this mode.
 Firmware problems and new feature requests can be submitted as [Issues in the CANmeleon firmware main repository](https://github.com/CANmeleon/canmeleon-usb-can-firmware/issues). Include the device model, active mode, firmware and driver versions, software/API, bus configuration and steps to reproduce.
 
 [ES582 parameter table](docs/parameters/es582.md) · [Parameter JSON (Chinese)](docs/parameters/es582.json) · [Device Manager issues](https://github.com/CANmeleon/canmeleon-device-manager/issues)
+
+[CANmeleon hardware, OEM integration and firmware porting](https://github.com/CANmeleon)
