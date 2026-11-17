@@ -8,7 +8,7 @@ CANmeleon ES582-compatible firmware connects supported USB-CAN/CAN FD hardware t
 
 ## When to choose ES582 firmware
 
-- Connect supported CANmeleon hardware to an ETAS INCA measurement or XCP/CCP calibration workflow.
+- Connect hardware with a matching CANmeleon firmware port to an ETAS INCA measurement or XCP/CCP calibration workflow.
 - Develop Windows applications that send and receive CAN/CAN FD frames through ETAS BOA.
 - Select a two-channel interface using the hardware requirements below, then install the driver and BOA components required by your INCA setup.
 
@@ -82,4 +82,8 @@ Firmware problems and new feature requests can be submitted as [Issues in the CA
 
 [ES582 parameter table](docs/parameters/es582.md) · [Parameter JSON (Chinese)](docs/parameters/es582.json) · [Device Manager issues](https://github.com/CANmeleon/canmeleon-device-manager/issues)
 
-[CANmeleon hardware, OEM integration and firmware porting](https://github.com/CANmeleon)
+## Ecosystem participation and commercial services
+
+CANmeleon works with hardware makers, chip vendors and developers. For software/firmware integration, CANmeleon firmware porting and maintenance on your chip platform, or custom firmware development, contact [len2slaw@foxmail.com](mailto:len2slaw@foxmail.com). Include your board/MCU, target API, required features and schedule.
+
+[Open-source hardware and free adaptation program](https://github.com/CANmeleon#open-source-development-and-free-firmware-adaptations) · [Request an open-source board adaptation](https://github.com/CANmeleon/canmeleon-usb-can-firmware/issues/new?template=open_hardware_adaptation.md)
